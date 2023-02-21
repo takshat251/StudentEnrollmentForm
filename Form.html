@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="site.css">
+    <title>Student Enrollment Form</title>
+   
+    
+  </head>
+  <body >
+    
+    <header class="fixed-top">
+        
+        <h3 >Student Enrollment Form</h3>
+    </header>
+   
+    <div class="row mx-5 my-5 ">
+        
+    <div class="container col-md-4 col-sm-4">
+       
+
+        <div class="row my-3 ">
+            <!-- Student Enrollment Form -->
+            <form class="needs-validation"  novalidate>
+                <div class="form-group row mx-4 my-2">
+                    <div class="col-sm-4">
+                    <label for="NameInput">Name</label>
+                    </div>
+                    <div class="col-sm-8">
+                    <input type="text" class="form-control form-control-sm" id="nameInput" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-group row mx-4 my-2 ">
+                    <div class="col-sm-4">
+                    <label for="emailInput">Email</label>
+                    </div>
+                    <div class="col-sm-8">
+                    <input type="email" class="form-control form-control-sm" id="emailInput" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-group row mx-4 my-2">
+                    <div class="col-sm-4">
+                    <label for="websiteInput">Website</label>
+                    </div>
+                    <div class="col-sm-8">
+                    <input type="url" class="form-control form-control-sm" id="websiteInput" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-group row mx-4 my-2">
+                    <div class="col-sm-4">
+                    <label for="imageLinkInput">Image link</label>
+                    </div>
+                    <div class="col-sm-8">
+                    <input type="url" class="form-control form-control-sm" id="imageLinkInput" required>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+                </div>
+                <div class="form-group row mx-4 my-2">
+                    <div class="col-sm-4">
+                    <label for="genderInput">Gender</label>
+                    </div>
+                    <div class="col-sm-8">
+                    <div class="form-check ">
+                    <input type="radio" class="form-check-input" value="Male" name="gender" checked>
+                    <label class="form-check-label form-control-sm" for="maleInput">Male</label><br>
+                    </div>
+                    <div class="form-check ">
+                    <input type="radio" class="form-check-input" value="Female" name="gender">
+                    <label class="form-check-label form-control-sm" for="femaleInput">Female</label>
+                    </div>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+
+                    </div>
+                </div>
+                <div class="form-group row ml-4 mr-0 my-2">
+                    <div class=" col-sm-3">
+                    <label for="skillsInput" >Skills</label>
+                    </div>
+                    <div class=" col-sm-9">
+                    <div class="form-check  form-check-inline ">
+                    <input type="checkbox" class="form-check-input" value="Java" name="skill"  checked>
+                    <label class="form-check-label " for="Java">Java</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" value="HTML" name="skill" >
+                    <label class="form-check-label " for="Html">HTML</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                    <input type="checkbox" class="form-check-input" value="CSS" name="skill" >
+                    <label class="form-check-label " for="CSS">CSS</label>
+                    </div>
+                    <div class="valid-feedback">Valid.</div>
+                    <div class="invalid-feedback">Check this checkbox to continue.</div>
+                    </div>
+                    
+                </div>
+                <div class="container mx-4 my-4">
+                <a id="enrollClick" class="btn btn-primary">Enroll NEW Student</a>
+                <a id="clearClick" class="btn btn-danger">Clear</a>
+                </div>
+            </form>
+        </div>
+        
+       
+       </div>
+    <div class="container col-md-2"> 
+ 
+   <div class="vertical"></div>
+       <hr>
+
+    </div> 
+
+       <div class="container col-md-4 col-sm-6">
+        <h4 class="p-2 mx-2 mt-2 mb-0" style="text-align:center">Enrolled Students</h4>
+       <div class="table-responsive-sm p-2 mx-2 mt-0 mb-4">
+        <!-- Student Record Table -->
+        <table id="tableData" class="table table-bordered">
+            
+            <thead>
+               
+                <tr>
+                    <th class="col-sm-10">Description</th>
+                    <th class="col-sm-2">Image</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        
+
+        </div>
+
+        </div>
+    </div>
+    
+      
+
+       <footer class="fixed-bottom">
+        
+           <h6>Copyright 2020-2021 by Fresher Training</h6>
+           
+       </footer>
+       <script src="Studentrecord.js"></script>
+       <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+       <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      
+       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+</html>

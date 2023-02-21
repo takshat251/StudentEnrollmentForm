@@ -1,0 +1,95 @@
+body {
+    background-color: white;
+    
+  }
+  header{
+    background-color: #06d6b3;
+    color: white;
+    text-align: center;
+    
+  }
+  footer{
+    background-color: #06d6b3;
+    color: white;
+    text-align: center;
+    
+  }
+  thead{
+    color: white;
+    background-color: rgb(132, 196, 4);
+  }
+  
+  .vertical { 
+    border-left: 3px solid #06d6b3; 
+    height: 99%; 
+    position:relative; 
+    left: 50%; 
+    visibility: hidden;
+} 
+hr{
+  height:2px;
+  border-width:0;
+  color:#06d6b3;
+  background-color:#06d6b3;
+  margin: 5px;
+}
+  
+ 
+ .fade-in{
+   animation:fading 1500ms 2
+  }
+  @keyframes 
+  fading{0%{opacity:0}50%{opacity:1}100%{opacity:1}}
+
+  
+  
+  
+  @media (min-width: 576px) { 
+    html {
+      font-size: .8rem;
+    }
+    
+    .vertical{
+      visibility: hidden;
+    }
+   }
+
+ 
+  @media (min-width: 768px) { 
+    html {
+      font-size: .85rem;
+    }
+    hr{
+      visibility: hidden;
+
+    }
+    .vertical{
+      visibility: visible;
+    }
+   }
+  
+ 
+  @media (min-width: 992px) { 
+    html {
+      font-size: .88rem;
+    }
+    hr{
+      visibility: hidden;
+    }
+    .vertical{
+      visibility: visible;
+    }
+   }
+  
+  
+  @media (min-width: 1200px) { 
+    html {
+      font-size: .9rem;
+    }
+    hr{
+      visibility: hidden;
+    }
+    .vertical{
+      visibility: visible;
+    }
+   }
